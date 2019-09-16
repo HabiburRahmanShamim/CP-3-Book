@@ -7,11 +7,10 @@ int main()
     freopen("input.txt", "r", stdin);
     freopen("output.txt", "w", stdout);
     int n, p, caso = 0;
-    while(scanf("%d%d", &n, &p))
+    while(scanf("%d%d\n", &n, &p))
     {
         if(n == 0)break;
         string p_s, brand, s;
-        getchar();
         for(int i = 0; i < n; i++)getline(cin, p_s);
         float d, f_ans = INT_MAX;
         int r,  cur_ratio = 0;
